@@ -1,0 +1,14 @@
+<h3>Servos que fazem parte da Franquia: </h3>
+
+{{#each servos}}
+<div class="card mt-4">
+    <div class="card-body">
+        <h3>Servo: {{servo.nome}}</h3>
+        <h3>Classe: {{servo.classe}} </h3>
+        <a style="float: right;" class="btn btn-danger px-3" href="/servos_franquia/franquias-servo/delete/{{fkFran}}/{{servo.id}}">Desvincular</a>
+    </div>
+</div>
+{{else}}
+<h2>Nenhum Vinculo Aqui</h2>
+{{/each}}
+

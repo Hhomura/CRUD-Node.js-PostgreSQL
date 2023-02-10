@@ -1,0 +1,13 @@
+<h2>Atualizar dados Mestre: </h2>
+
+<form action="/mestres/atualizar/{{mestres.id}}" method="post">
+
+    <label for="nome">Nome: </label>
+    <input class="form-control" type="text" name="nome" id="nome" value="{{mestres.nome}}">
+    <label for="idade">Idade</label>
+    <input class="form-control" type="text" name="idade" id="idade" value="{{mestres.idade}}">
+
+    <button class="mt-4 btn btn-success px-4" type="submit">Atualizar</button>
+    <a href="/mestres/home" class="btn btn-danger mt-4 mt-2 ms-2 px-4">Cancelar</a>
+
+</form>

@@ -1,0 +1,15 @@
+<h2>Home Servos e Franquias</h2>
+<a style="display: inline-block;" class="btn btn-success mt-2 px-3" href="/servos_franquia/cadastro">Vincular Servo e Franquia</a>
+
+{{#each franquias}}
+
+<div class="card mt-4" style="width: 18rem; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title">{{nome}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{nome}}</h6>
+    <p class="card-text">{{descricao}}</p>
+    <a href="/servos_franquia/franquia-servo/{{id}}" class="card-link">Servos Vinculados</a>
+  </div>
+</div>
+
+{{/each}}

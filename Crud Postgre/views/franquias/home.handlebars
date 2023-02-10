@@ -1,0 +1,30 @@
+<h2>Home Franquias</h2>
+<a class="btn btn-success mt-2 px-3" href="/franquias/cadastro">Add Nova Franquia</a>
+
+{{#each franquias}}
+
+<div class="card mt-4">
+    <div class="card-body">
+        
+        <h4 style="display: inline-block;" >Nome da Franquia: <strong>{{nome}}</strong></h4>
+
+        <div class="container">
+            <a style="float: right;" class="btn btn-primary px-3 ms-4" href="/franquias/atualizar/{{id}}">Editar</a>
+            <a style="float: right;" class="btn btn-danger px-3" href="/franquias/delete/{{id}}">Eliminar</a>
+        </div>
+
+        <span style="display: inline-block;">Descrição: <strong>{{descricao}}</strong></span>
+
+        
+        
+    </div>
+</div>
+
+{{else}}
+
+<h3 class="mt-5">Nenhuma Franquia Cadastrada</h3>
+
+{{/each}}
+
+
+

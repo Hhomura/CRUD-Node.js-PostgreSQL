@@ -1,0 +1,16 @@
+<h2>Home Mestre</h2>
+<a class="btn btn-success mt-2 px-3" href="/mestres/cadastro">Add Novo Mestre</a>
+
+{{#each mestres}}
+<div class="card mt-4">
+    <div class="card-body">
+        
+        <h4>Nome do Mestre: <strong>{{nome}}</strong></h4>
+        <h4 style="display: inline-block;">Idade: <strong>{{idade}}</strong></h4>
+
+        <a style="float: right;" class="btn btn-primary px-3 ms-4" href="/mestres/atualizar/{{id}}">Editar</a>
+        <a style="float: right;" class="btn btn-danger px-3" href="/mestres/delete/{{id}}">Eliminar</a>
+        
+    </div>
+</div>
+{{/each}}

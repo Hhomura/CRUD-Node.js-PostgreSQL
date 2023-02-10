@@ -1,0 +1,28 @@
+<h2>Cadastro de Servos e Franquia</h2>
+
+<form action="/servos_franquia/cadastro" method="post">
+
+    <label for="servo">Servo: </label>
+
+    <select class="form-control" name="servos">
+        {{#each servos}}
+        <option id="mestres" value="{{id}}">{{nome}}</option>
+        {{else}}
+        <option value="0">Nenhum servo registrado</option>
+        {{/each}}
+    </select>
+
+    <label for="franquias">Franquias: </label>
+
+    <select class="form-control" name="franquias">
+        {{#each franquias}}
+        <option id="mestres" value="{{id}}">{{nome}}</option>
+        {{else}}
+        <option value="0">Nenhuma Franquia registrada</option>
+        {{/each}}
+    </select>
+
+    <button class="btn btn-success mt-4 mt-2 px-3">Cadastrar</button>
+    <a href="/servos_franquia/home" class="btn btn-danger mt-4 mt-2 ms-2 px-3">Cancelar</a>
+    
+</form>

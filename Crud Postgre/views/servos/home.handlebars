@@ -1,0 +1,14 @@
+<h2>HOME SERVOS</h2>
+<a class="btn btn-success mt-2 px-3" href="/servos/cadastro">Add Novo Servo</a>
+
+{{#each servos}}
+<div class="card mt-4">
+    <div class="card-body">
+        <h4>Nome do Servo: <strong>{{nome}}</strong></h4>
+        <h4 style="display: inline-block;">Classe: <strong>{{classe}}</strong></h4>
+        <h4>Mestre: {{mestre.nome}}</h4>
+        <a style="float: right;" class="btn btn-primary px-3 ms-4" href="/servos/atualizar/{{id}}">Editar</a>
+        <a style="float: right;" class="btn btn-danger px-3" href="/servos/delete/{{id}}">Eliminar</a>
+    </div>
+</div>
+{{/each}}

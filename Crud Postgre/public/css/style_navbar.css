@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Heebo:wght@300;400&family=Play&family=Roboto+Slab:wght@200;300;400&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.custom-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.custom-link:hover{
+    border-top: 4px solid white; 
+    color: white;
+}
+
+.custom-link:hover .custum-link-container{
+    border-top: -4px solid gray;
+}
+
+.custom-link-logo{
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.custom-link-logo:hover{
+    color: white;
+}

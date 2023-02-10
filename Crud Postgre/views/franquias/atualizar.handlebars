@@ -1,0 +1,15 @@
+<h2>ATUALIZAÇÃO DE FRANQUIA</h2>
+
+<form action="/franquias/atualizar/{{franquia.id}}" method="post">
+
+    <label for="nome">Nome: </label>
+    <input class="form-control" type="text" name="nome" id="nome" value="{{franquia.nome}}">
+    <label for="descricao">Descrição</label>
+    <div class="input-group">
+        <textarea id="descricao" name="descricao" class="form-control" aria-label="With textarea">{{franquia.descricao}}</textarea>
+    </div>
+
+    <button class="mt-4 btn btn-success px-4" type="submit">Atualizar</button>
+    <a href="/franquias/home" class="btn btn-danger mt-4 mt-2 ms-2 px-4">Cancelar</a>
+
+</form>
