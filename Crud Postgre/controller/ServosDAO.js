@@ -7,11 +7,12 @@ module.exports = {
     preAddServo : (req, res) =>{
         mestres.findAll().then((mestres) =>{
             res.render('servos/cadastro', {mestres : mestres});
-        })  
+        })
     },
 
     addServo : (req, res) =>{
-            servos.create({
+               
+           servos.create({
                 nome: req.body.nome,
                 classe: req.body.classe,
                 idade: req.body.idade,
@@ -22,7 +23,9 @@ module.exports = {
             }).catch((error) =>{
                 req.flash('error_msg', 'Erro no Cadastro do Servo'+error)
                 res.redirect('/servos/home');
-            })
+            }) 
+        
+            
     },
 
     showAllServos : (req, res) =>{
